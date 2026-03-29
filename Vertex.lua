@@ -33,16 +33,6 @@ Sidebar.BackgroundColor3 = Color3.fromRGB(20,20,20)
 local SideCorner = Instance.new("UICorner", Sidebar)
 SideCorner.CornerRadius = UDim.new(0, 12)
 
---// title
-local Title = Instance.new("TextLabel")
-Title.Parent = Sidebar
-Title.Size = UDim2.new(1, 0, 0, 50)
-Title.BackgroundTransparency = 1
-Title.Text = "Vertex"
-Title.TextColor3 = Color3.fromRGB(255,255,255)
-Title.TextScaled = true
-Title.Font = Enum.Font.GothamBold
-
 --// content
 local Content = Instance.new("Frame")
 Content.Parent = Main
@@ -53,7 +43,6 @@ Content.BackgroundColor3 = Color3.fromRGB(18,18,18)
 local ContentCorner = Instance.new("UICorner", Content)
 ContentCorner.CornerRadius = UDim.new(0, 12)
 
---// stroke content
 local ContentStroke = Instance.new("UIStroke", Content)
 ContentStroke.Color = Color3.fromRGB(40,40,40)
 ContentStroke.Thickness = 1.5
