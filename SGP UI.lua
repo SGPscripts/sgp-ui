@@ -1,34 +1,34 @@
--- servicios
+--// services
 local Lighting = game:GetService("Lighting")
 
--- blur
+--// blur
 local Blur = Instance.new("BlurEffect")
 Blur.Size = 15
 Blur.Parent = Lighting
 
--- gui base
+--// gui
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game.CoreGui
 
--- frame principal (horizontal tipo rayfield)
+--// main frame (responsive)
 local Main = Instance.new("Frame")
 Main.Parent = ScreenGui
-Main.Size = UDim2.new(0, 600, 0, 350)
-Main.Position = UDim2.new(0.5, -300, 0.5, -175)
-Main.BackgroundColor3 = Color3.fromRGB(20, 40, 120) -- azul fuerte
+Main.Size = UDim2.new(0.8, 0, 0.6, 0)
+Main.Position = UDim2.new(0.1, 0, 0.2, 0)
+Main.BackgroundColor3 = Color3.fromRGB(0, 120, 255) -- azul fuerte
 
--- bordes redondeados
+--// corner
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = Main
 UICorner.CornerRadius = UDim.new(0, 12)
 
--- borde (stroke)
+--// stroke (borde)
 local UIStroke = Instance.new("UIStroke")
 UIStroke.Parent = Main
 UIStroke.Thickness = 2
 UIStroke.Color = Color3.fromRGB(0, 200, 255) -- celeste fuerte
 
--- sombra fake (opcional pero queda GOD)
+--// sombra
 local Shadow = Instance.new("ImageLabel")
 Shadow.Parent = Main
 Shadow.BackgroundTransparency = 1
